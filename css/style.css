@@ -3,6 +3,10 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+section {
+    height: 100vh;
+}
+
 .label-bold {
     font-weight: bolder;
 }
@@ -15,6 +19,32 @@ h1 {
 p {
     margin-bottom: 2%;
     line-height: 1.5;
+}
+
+/*---footer---*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:thick solid #005826;
+    padding: 0.5% 10%;
+}
+
+#social-network {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-network img {
+   height: 50px;
+}
+
+#copyright {
+    font-size: 80%;
+    color: gray;
+    margin-top: 1%;
 }
 
 /*---MAIN---navigation*/
@@ -49,10 +79,6 @@ li {
 }
 
 /*---MAIN---main-content*/
-#main {
-    height: 100vh;
-}
-
 #main-content {
     display: flex;
     flex-direction: row-reverse;
@@ -87,30 +113,49 @@ li {
     background-color: #3cb879;
 }
 
-/*-----footer-----*/
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top:thick solid #005826;
-    padding: 0.5% 10%;
-}
-
-#social-network {
-    width: 10%;
+/*---SKILLS---*/
+#skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/cloud.png);
+    background-position: 90% 30%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    
 }
 
-#social-network img {
-   height: 50px;
+#skills h1 {
+    color : #005826;
+    font-weight: bolder;
 }
 
-#copyright {
-    font-size: 80%;
-    color: gray;
-    margin-top: 1%;
+#skills h2 {
+    margin: 10% 0% 5% 0%;
+}
+
+#skills-text {
+    padding: 5% 10% 5% 0%;
+}
+
+#skills-content {
+    width: 20%;
+    margin-left: 5%;
+}
+
+.skills-row {
+    margin-bottom: 5%;
+}
+
+.skills-row p {
+    font-weight: bolder;
+}
+
+#skills-content img {
+    height: 40px;
+    margin-right: 5%;
 }
 
 
