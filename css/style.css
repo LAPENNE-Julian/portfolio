@@ -1,19 +1,46 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 section {
     height: 100vh;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 5px dotted #d7c6d8;
 }
 
 .label-bold {
     font-weight: bolder;
 }
 
+.label-capitalized {
+    text-transform: uppercase;
+}
+
+.label-center {
+    text-align: center;
+}
+
 h1 {
-    font-size: 150%;
+    font-size: 180%;
     margin-bottom: 10%;
+}
+
+h2 {
+    font-size: 150%;
+    margin-bottom: 5%;
+    color : #005826;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 130%;
+    color: #bdb2c3;
+    font-variant: small-caps;
+    font-weight: 800;
+    margin: 10% 0% 5% 0%;
 }
 
 p {
@@ -47,57 +74,50 @@ footer {
     margin-top: 1%;
 }
 
-/*---MAIN---navigation*/
-nav,
-nav ul {
+/*---navigation---*/
+.navigation {
+    width: 100%;
+    position: fixed;
     display: flex;
-    flex-direction: row; 
-}
-
-nav {
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: baseline;
 }
 
-nav ul {
+.navigation-menu {
     width: 80%;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     color: #005826;
     font-weight: 900;
     font-size: 110%;
 }
 
-#nav-header,
-li {
+.navigation-header,
+.navigation-menu li {
     margin: 2% 5% 0% 5%;
 }
 
-#nav-header {
+.navigation-header {
     font-size: 200%;
     margin: 2% 2% 5% 5%;
-    
 }
 
-/*---MAIN---main-content*/
-#main-content {
+/*---main---*/
+#main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#avatar img {
-    height: 500px;
-    border-radius: 50%;
-    margin-left: 5%;
+.main-content {
+    margin-right: 15%;
+    padding: 5% 0% 5% 0%;
 }
 
-#main-content-text {
-    margin-right: 5%;
-    padding: 5% 10% 5% 0%;
-}
-
-#main-content-text-btn button{
+.main-content-btn button{
     margin: 5% 2% 0% 0%;
     border: none;
     border-radius: 5%;
@@ -105,44 +125,41 @@ li {
     opacity: 0.8;
 }
 
-#btn-download-cv {
+.btn-download {
     background-color: #bdb2c3;
 }
 
-#btn-realisation {
+.btn-realisation {
     background-color: #3cb879;
 }
+
+.main-model img {
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
 
 /*---SKILLS---*/
 #skills {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-
-    background-image: url(../images/cloud.png);
-    background-position: 90% 30%;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    
+    align-items: center;  
 }
 
-#skills h1 {
-    color : #005826;
-    font-weight: bolder;
-}
-
-#skills h2 {
-    margin: 10% 0% 5% 0%;
-}
-
-#skills-text {
+.skills-text {
     padding: 5% 10% 5% 0%;
 }
 
-#skills-content {
+.skills-content {
     width: 20%;
     margin-left: 5%;
+}
+
+.skills-content img {
+    height: 40px;
+    margin-right: 5%;
 }
 
 .skills-row {
@@ -153,9 +170,73 @@ li {
     font-weight: bolder;
 }
 
-#skills-content img {
-    height: 40px;
-    margin-right: 5%;
+/*---introduction--*/
+#introduction {
+    padding: 15% 20% 0%;
+}
+
+#introduction h2 {
+    color : #005826;
+}
+
+#introduction p {
+    text-align: justify;
+}
+
+/*---production---*/
+#productions  {
+    padding: 10% 20% 0%;
+}
+
+.production-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.production-card {
+    border: thin solid gray;
+    border-radius: 10% 0% 10% 0%;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 10px 5px 5px rgb(145, 145, 145);
+}
+
+.production-card h3 {
+    color: #b69dc4d3;
+    margin-bottom: 15%;
+}
+
+.production-card a {
+    font-size: 110%;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rock Salt', cursive;
+}
+
+.production-card p {
+    font-size: 90%;
+}
+
+.production-card p:first-of-type {
+    margin-top: 10%;
+}
+
+/*---contact---*/
+#contact {
+    padding: 15% 20% 0%;
+    border: none;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.contact-item {
+    margin: 5% 8%;
 }
 
 

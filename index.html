@@ -5,142 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAPENNE Julian Développeur web Full-stack</title>
-    
+    <!--avdl.app font-->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!------------navigation------------>
+    <nav class="navigation">
+        <a class="navigation-header" href="#main">
+            <span class="label-bold label-capitalized">lapenne</span> Julian
+        </a>
 
-    <!------------MAIN------------>
+        <ul class="navigation-menu">
+            <li ><a href="#main">Accueil</a></li>
+            <li ><a href="#skills">Mes Compétences</a></li>
+            <li ><a href="#introduction">Qui Suis-je ?</a></li>
+            <li ><a href="#productions">Mes Réalisations</a></li>
+            <li ><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!------------main------------>
     <section id="main">
-        <!------------NAVIGATION------------>
-        <nav>
-            <a id="nav-header" href="#main">
-                <span class="label-bold">LAPENNE</span> Julian
-            </a>
-
-            <ul>
-                <li ><a href="#main">Accueil</a></li>
-                <li ><a href="#skills">Mes Compétences</a></li>
-                <li ><a href="#introduction">Qui Suis-je ?</a></li>
-                <li ><a href="#myRealisations">Mes Réalisations</a></li>
-                <li ><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="main-content">
+            <h1>Bonjour, je suis développeur Full stack</h1>
+            <p>Je conçois des applications web et mobile.</p>
+            <p>Je travaille quotidiennement sur les languages tels que : Hteml, Css, Javascript, Symfony, Php et Sql</p>
+            <p>Vous êtes intéressé(e) par mon profil ?</p>
     
-        <div id="main-content">
-            <div id="avatar">
-                <img src="./images/default-avatar.jpg" alt="">
+            <div class="main-content-btn">
+                <button class="btn-download">Téléchargez mon CV (Format PDF)</button>
+                <button class="btn-realisation">Mes réalisations</button>
             </div>
+        </div>
 
-            <div id="main-content-text">
-                <h1>Bonjour, je suis développeur Full stack</h1>
-                <p>Je conçois des applications web et mobile.</p>
-                <p>Je travaille quotidiennement sur les languages tels que : Hteml, Css, Javascript, Symfony, Php et Sql</p>
-                <p>Vous êtes intéressé(e) par mon profil ?</p>
-        
-                <div id="main-content-text-btn">
-                    <button id="btn-download-cv">Téléchargez mon CV (Format PDF)</button>
-                    <button id="btn-realisation">Mes réalisations</button>
-                </div>
-            </div>
+        <div class="main-model">
+            <img src="./images/default-avatar.jpg" alt="">
         </div>
     </section>
 
     <!------------SKILLS------------>
     <section id="skills">
 
-        <div id="skills-text">
+        <div class="skills-text">
+            <h2>Mes compétences</h2> 
 
-            <h1>Mes compétences</h1> 
-
-            <div di="skills-text-front-end">
-                <h2>Front-end</h2>
-                <p>- Maquetter une application</p>
-                <p>- Réaliser une interface utilisteur responsive statique</p>
-                <p>- Réaliser une interface utilisteur responsive dynamique</p>
+            <div class="skills-text-front">
+                <h3>Front-end</h3>
+                <p>Maquetter une application</p>
+                <p>Réaliser une interface utilisteur responsive statique</p>
+                <p>Réaliser une interface utilisteur responsive dynamique</p>
             </div>
 
-            <div di="skills-text-back-end">
-                <h2>Back-end</h2>
-                <p>- Créer une base de données</p>
-                <p>- Développer les composants d'accès aux données</p>
-                <p>- Développer la partie back-end d'une application web</p>
+            <div class="skills-text-back">
+                <h3>Back-end</h3>
+                <p>Créer une base de données</p>
+                <p>Développer les composants d'accès aux données</p>
+                <p>Développer la partie back-end d'une application web</p>
             </div>
         </div>
 
-        <div id="skills-content">
-            <div id="skills-content-front">
-                <div class="skills-row">
-                    <img src="./images/html.png" alt="">
-                    <strong>Hyper Text Markup Language (HTML5)</strong>
-                </div>
+        <div class="skills-content">
+            <div class="skills-row">
+                <img src="./images/html.png" alt="">
+                <strong>Hyper Text Markup Language (HTML5)</strong>
+            </div>
 
-                <div class="skills-row">
-                    <img src="./images/css.png" alt="">
-                    <strong>Cascading Style Sheets (CSS)</strong>
-                </div>
+            <div class="skills-row">
+                <img src="./images/css.png" alt="">
+                <strong>Cascading Style Sheets (CSS)</strong>
+            </div>
 
-                <div class="skills-row">
-                    <img src="./images/js.png" alt="">
-                    <strong>JavaScript (JS)</strong>
-                </div>
+            <div class="skills-row">
+                <img src="./images/js.png" alt="">
+                <strong>JavaScript (JS)</strong>
             </div>
     
-            <div id="skills-content-back">
-                <div class="skills-row">
-                    <img src="./images/php.png" alt="">
-                    <strong>HyperText Preprocessor (PHP)</strong>
-                </div>
+            <div class="skills-row">
+                <img src="./images/php.png" alt="">
+                <strong>HyperText Preprocessor (PHP)</strong>
+            </div>
 
-                <div class="skills-row">
-                    <img src="./images/sql.png" alt="">
-                    <strong>Structured Query Language (SQL)</strong>
-                </div>
+            <div class="skills-row">
+                <img src="./images/sql.png" alt="">
+                <strong>Structured Query Language (SQL)</strong>
+            </div>
 
-                <div class="skills-row">
-                    <img src="./images/symfony.png" alt="">
-                    <strong>Symfony</strong>
-                </div>
+            <div class="skills-row">
+                <img src="./images/symfony.png" alt="">
+                <strong>Symfony</strong>
             </div>
         </div>
+       
     </section>
 
     <!------------INTRODUCTION------------>
-    <!-- <section id="introduction">
-        <p>Je me présente</p>
+    <section id="introduction">
+
+        <h2>Je me présente</h2>
         <p>Bonjour ! moi c'est Julian. J'ai 31 ans, originaire de Lyon.</p>
         <p>Reconverti dans le domaine du développement web, j'aspire à évoluer dans ce secteur que je trouve passionant.</p>
         <p>D'abord plombier puis agent logistique, je suis un autodidacte.</p>
-    </section> -->
+    
+    </section>
 
     <!------------PRODUCTIONS------------>
-    <!-- <section id="productions">
-        <div id="production-card">
-            <h2>Avez-vous déjà lu ..?</h2>
-            <a href="https://www.avdl.app"></a>
-            <p>Découverte d'anecdotes</p>
+    <section id="productions">
+        <h2>Mes réalisations</h2>
+
+        <div class="production-content">
+            <div class="production-card">
+                <h3>avdl.app</h3>
+                <a href="https://www.avdl.app" target="_blank">Avez-vous déjà lu ..?</a>
+                <p>Découverte d'anecdotes</p>
+            </div>
+    
+            <!-- <div class="production-card">
+                <h3>exemple</h3>
+                <a href="https://www.avdl.app"></a>
+                <p>exemple text</p>
+            </div> -->
         </div>
-    </section> -->
+    </section>
 
     <!------------CONTACT----------->
-    <!-- <section id="contact">
-        <h1>Me contacter</h1>
-        <p>Vous souhaitez me joindre ?</p>
-        <p>Je me ferai un plaisir de vous répondrz le plus rapidement possible. A très vite !</p>
+    <section id="contact">
 
-        <div id="contact-phone">
-            <p>par téléphone</p>
-            <p>06 65 40 90 76</p>
-        </div>
+        <h2>Me contacter</h2>
+        <p class="label-center">Vous souhaitez me joindre ?</p>
 
-        <div id="contact-email">
-            <p>Par Email</p>
-            <p>lapenne.julian@gmail.com</p>
+        <div class="contact-content">
+            <div class="contact-item">
+                <!-- <img src="" alt=""> -->
+                <h3>par téléphone</h3>
+                <p>06 65 40 90 76</p>
+            </div>
+    
+            <div class="contact-item">
+                <!-- <img src="" alt=""> -->
+                <h3>par email</h3>
+                <p>lapenne.julian@gmail.com</p>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <footer>
         <div id="social-network">
