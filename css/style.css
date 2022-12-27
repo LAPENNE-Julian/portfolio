@@ -3,6 +3,10 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.bubble {
+    display: none;
+}
+
 section {
     height: 100vh;
     width: 90%;
@@ -17,10 +21,6 @@ section {
 
 .label-capitalized {
     text-transform: uppercase;
-}
-
-.label-center {
-    text-align: center;
 }
 
 h1 {
@@ -46,6 +46,7 @@ h3 {
 p {
     margin-bottom: 2%;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /*---footer---*/
@@ -107,14 +108,14 @@ footer {
 /*---main---*/
 #main {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
 .main-content {
-    margin-right: 15%;
-    padding: 5% 0% 5% 0%;
+    margin-right: 10%;
+    padding: 5% 0%;
 }
 
 .main-content-btn button{
@@ -135,12 +136,13 @@ footer {
 
 .main-model img {
     height: 500px;
-    border-radius: 50%;
     margin-left: 5%;
+    border-radius: 50%;
+    border: medium solid black;
 }
 
 
-/*---SKILLS---*/
+/*---skills---*/
 #skills {
     display: flex;
     flex-direction: row;
@@ -173,14 +175,6 @@ footer {
 /*---introduction--*/
 #introduction {
     padding: 15% 20% 0%;
-}
-
-#introduction h2 {
-    color : #005826;
-}
-
-#introduction p {
-    text-align: justify;
 }
 
 /*---production---*/
@@ -236,7 +230,172 @@ footer {
 }
 
 .contact-item {
-    margin: 5% 8%;
+    margin: 5% 10%;
+}
+
+.contact-item img {
+    height: 100px;
 }
 
 
+/*---------------------------------------------------------
+ MEDIA QUERIES
+---------------------------------------------------------*/
+
+/*----------multi----------*/
+/*Mobile-S, Mobile-M, Mobile -L*/
+@media (max-width: 425px){
+    section {
+        height: auto;
+        padding: 25% 5% 15%;
+    }
+
+    h1 {
+        font-size: 130%;
+    }
+
+    h2 {
+        font-size: 110%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    p {
+        font-size: 90%;
+        margin-bottom: 0%;
+    }
+
+    /*---navigation---*/
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .navigation-header {
+        font-size: 150%;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+
+    .bubble {
+        display: flex;
+        padding: 2% 2% 5% 5%;
+    }
+
+    .bubble-text {
+        background: #005826;
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 3px;
+        width: 80px;
+    }
+
+    .bubble-text img {
+        height: 30px;
+    }
+    
+    .bubble-text::after {
+    content:""; 
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid #005826;
+    position: absolute;
+    }
+
+    /*---main---*/
+    #main {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin-right: 0%;
+        padding: 0%;
+    }
+
+    .main-model img {
+        height: 200px;
+        margin: 0% 0% 10% 0%;
+    }
+
+    /*---skills---*/
+    #skills {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .skills-text {
+        margin-bottom: 10%;
+    }
+
+    .skills-content {
+        width: 90%;
+    }
+
+    .skills-content img {
+        height: 30px;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    /*---introduction---*/
+    #introduction {
+        padding: 25% 5% 15%;
+    }
+
+    /*---production---*/
+    
+}
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet max 650*/
+@media (max-width: 650px){
+    
+}
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet max 810*/
+@media (max-width: 810px){
+    
+}
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet*/
+@media (max-width: 1023px){
+    
+}
+
+/*Tablet min 650, lapTop 1024*/
+@media (min-width: 651px) and (max-width: 1024px){
+
+    
+}
+
+/*Tablet, LapTop 1024*/
+@media (min-width: 426px) and (max-width: 1024px){
+    
+}
+
+/*----------standard----------*/
+/*Mobile-S and Mobile-M*/
+@media (max-width: 375px){ 
+    
+}
+
+/*Mobile L*/
+@media (min-width: 376px) and (max-width: 425px){
+    
+}
+
+/* tablet*/
+@media (min-width: 426px) and (max-width: 768px){
+    
+}
+
+/*lapTop 1024*/
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
