@@ -398,8 +398,7 @@ footer {
 
     /*---contact---*/
     #contact {
-        height: 100vh;
-        padding: 35% 10% 0%;
+        padding: 35% 10% 10%;
     }
 
     .contact-content, 
@@ -407,10 +406,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .contact-item {
-        margin: 10% 0%;
     }
 }
 
@@ -423,6 +418,7 @@ footer {
 @media (max-width: 810px){
     
 }
+
 
 /*Mobile-S, Mobile-M, Mobile -L, Tablet*/
 @media (max-width: 1023px){
@@ -454,6 +450,50 @@ footer {
 /* tablet*/
 @media (min-width: 426px) and (max-width: 768px){
     
+    section {
+        padding: 20% 5% 15%; /*---padding: 25% 5% 15%;---*/
+    }
+
+    /*---footer---*/
+    footer {
+        padding: 4% 30%; /*---padding: 5% 10%;---*/
+    }
+
+    /** a supprimer pour le format tablet **/
+
+    /*.main-content-btn {
+        margin-top: 15%;
+        padding: 0% 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content-btn a {
+        font-size: 90%;
+        margin-bottom: 10%;
+        border-radius: 5px;
+        padding: 8%;
+        text-align: center;
+    } */
+
+    .main-model img {
+        height: 250px;  /*---height: 200px;---*/
+        margin: 0% 0% 20% 0%; /*---margin: 0% 0% 10% 0%;---*/
+    }
+
+    /*---introduction---*/
+    #introduction {
+        padding: 25% 5% 15%; /*---padding: 45% 5% 15%;---*/
+    }
+    /*---production---*/
+    #productions {
+        padding: 15% 10% 0%; /*---padding: 35% 10% 0%;---*/
+    }
+
+    /*---contact---*/
+    #contact {
+        padding: 20% 10% 10%; /*---padding: 35% 10% 10%;---*/
+    }
 }
 
 /*lapTop 1024*/
