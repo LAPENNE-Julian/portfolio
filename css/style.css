@@ -249,6 +249,38 @@ footer {
 /*----------multi----------*/
 /*Mobile-S, Mobile-M, Mobile -L*/
 @media (max-width: 425px){
+
+    /*---main---*/
+    .main-content-btn {
+        margin-top: 15%;
+        padding: 0% 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-content-btn a {
+        font-size: 90%;
+        margin-bottom: 10%;
+        border-radius: 5px;
+        padding: 8%;
+        text-align: center;
+    }
+}
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet max 650*/
+@media (max-width: 650px){
+    
+}
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet max 810*/
+@media (max-width: 810px){
+    
+}
+
+
+/*Mobile-S, Mobile-M, Mobile -L, Tablet*/
+@media (max-width: 1023px){
+
     section {
         height: auto;
         padding: 25% 5% 15%;
@@ -296,7 +328,6 @@ footer {
         padding: 7px 15px;
         border-radius: 5px;
         width: 80px;
-        
     }
 
     .bubble-text img {
@@ -333,21 +364,6 @@ footer {
     .main-content {
         margin-right: 0%;
         padding: 0%;
-    }
-
-    .main-content-btn {
-        margin-top: 15%;
-        padding: 0% 10%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-content-btn a {
-        font-size: 90%;
-        margin-bottom: 10%;
-        border-radius: 5px;
-        padding: 8%;
-        text-align: center;
     }
 
     .main-model img {
@@ -409,22 +425,6 @@ footer {
     }
 }
 
-/*Mobile-S, Mobile-M, Mobile -L, Tablet max 650*/
-@media (max-width: 650px){
-    
-}
-
-/*Mobile-S, Mobile-M, Mobile -L, Tablet max 810*/
-@media (max-width: 810px){
-    
-}
-
-
-/*Mobile-S, Mobile-M, Mobile -L, Tablet*/
-@media (max-width: 1023px){
-    
-}
-
 /*Tablet min 650, lapTop 1024*/
 @media (min-width: 651px) and (max-width: 1024px){
 
@@ -451,48 +451,32 @@ footer {
 @media (min-width: 426px) and (max-width: 768px){
     
     section {
-        padding: 20% 5% 15%; /*---padding: 25% 5% 15%;---*/
+        padding: 20% 5% 15%;
     }
-
+    
     /*---footer---*/
     footer {
-        padding: 4% 30%; /*---padding: 5% 10%;---*/
+        padding: 4% 30%;
     }
-
-    /** a supprimer pour le format tablet **/
-
-    /*.main-content-btn {
-        margin-top: 15%;
-        padding: 0% 10%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-content-btn a {
-        font-size: 90%;
-        margin-bottom: 10%;
-        border-radius: 5px;
-        padding: 8%;
-        text-align: center;
-    } */
 
     .main-model img {
-        height: 250px;  /*---height: 200px;---*/
-        margin: 0% 0% 20% 0%; /*---margin: 0% 0% 10% 0%;---*/
+        height: 250px;
+        margin: 0% 0% 20% 0%;
     }
 
     /*---introduction---*/
     #introduction {
-        padding: 25% 5% 15%; /*---padding: 45% 5% 15%;---*/
+        padding: 25% 5% 15%;
     }
+
     /*---production---*/
     #productions {
-        padding: 15% 10% 0%; /*---padding: 35% 10% 0%;---*/
+        padding: 15% 10% 0%;
     }
 
     /*---contact---*/
     #contact {
-        padding: 20% 10% 10%; /*---padding: 35% 10% 10%;---*/
+        padding: 20% 10% 10%;
     }
 }
 
