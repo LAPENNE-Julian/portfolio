@@ -118,10 +118,14 @@ footer {
     padding: 5% 0%;
 }
 
-.main-content-btn button{
-    margin: 5% 2% 0% 0%;
+.main-content-btn {
+    margin-top: 5%;
+}
+
+.main-content-btn a {
+    margin-right: 2%;
     border: none;
-    border-radius: 5%;
+    border-radius: 10px;
     padding: 2%;
     opacity: 0.8;
 }
@@ -178,7 +182,7 @@ footer {
 }
 
 /*---production---*/
-#productions  {
+#productions {
     padding: 10% 20% 0%;
 }
 
@@ -256,6 +260,7 @@ footer {
 
     h2 {
         font-size: 110%;
+        margin-bottom: 10%;
     }
 
     h3 {
@@ -264,7 +269,7 @@ footer {
 
     p {
         font-size: 90%;
-        margin-bottom: 0%;
+        margin-bottom: 1%;
     }
 
     /*---navigation---*/
@@ -289,12 +294,14 @@ footer {
         background: #005826;
         color: #fff;
         padding: 7px 15px;
-        border-radius: 3px;
+        border-radius: 5px;
         width: 80px;
+        
     }
 
     .bubble-text img {
         height: 30px;
+        margin: 0px 10px;
     }
     
     .bubble-text::after {
@@ -303,6 +310,19 @@ footer {
     border-right:20px solid transparent;
     border-top: 20px solid #005826;
     position: absolute;
+    }
+
+    /*---footer---*/
+    footer {
+        padding: 5% 10%;
+    }
+
+    #social-network {
+        width: 50%;
+    }
+
+    #copyright {
+        margin-top: 5%;
     }
 
     /*---main---*/
@@ -315,6 +335,21 @@ footer {
         padding: 0%;
     }
 
+    .main-content-btn {
+        margin-top: 15%;
+        padding: 0% 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content-btn a {
+        font-size: 90%;
+        margin-bottom: 10%;
+        border-radius: 5px;
+        padding: 8%;
+        text-align: center;
+    }
+
     .main-model img {
         height: 200px;
         margin: 0% 0% 10% 0%;
@@ -322,7 +357,7 @@ footer {
 
     /*---skills---*/
     #skills {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
     }
 
@@ -332,6 +367,11 @@ footer {
 
     .skills-content {
         width: 90%;
+        font-size: 90%;
+        padding: 8%;
+        margin: 15% 0%;
+        border: medium solid #bdb2c3;
+        border-radius: 10px;
     }
 
     .skills-content img {
@@ -346,11 +386,32 @@ footer {
     
     /*---introduction---*/
     #introduction {
-        padding: 25% 5% 15%;
+        height: 100vh;
+        padding: 45% 5% 15%;
     }
 
     /*---production---*/
-    
+    #productions {
+        height: 100vh; 
+        padding: 35% 10% 0%; 
+    }
+
+    /*---contact---*/
+    #contact {
+        height: 100vh;
+        padding: 35% 10% 0%;
+    }
+
+    .contact-content, 
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin: 10% 0%;
+    }
 }
 
 /*Mobile-S, Mobile-M, Mobile -L, Tablet max 650*/
