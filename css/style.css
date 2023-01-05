@@ -3,7 +3,8 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.bubble {
+.bubble,
+.navigation-menu-burger {
     display: none;
 }
 
@@ -127,7 +128,7 @@ footer {
     border: none;
     border-radius: 10px;
     padding: 2%;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .btn-download {
@@ -303,32 +304,12 @@ footer {
 
     .navigation-header {
         font-size: 150%;
+        z-index: 2;
     }
 
     .navigation-menu {
         display: none;
     }
-
-    /*---navigation in burger---*/
-    /* .navigation-menu {
-        display: flex;
-        flex-direction: column;
-        
-        position: absolute;
-        float: left;
-        width: 100%;
-        margin-top: 10%;
-
-        background-color: #005826;
-        color: white;
-        border-radius: 5px;
-        padding: 2%;
-    }
-
-    .navigation-menu li {
-        font-size: 90%;
-        margin-bottom: 2%;
-    } */
 
     /*---bubble burger---*/
     .bubble {
@@ -355,6 +336,31 @@ footer {
     border-right:20px solid transparent;
     border-top: 20px solid #005826;
     position: absolute;
+    }
+
+    /*---navigation in burger---*/
+    .navigation-menu-burger {
+        flex-direction: column;
+        position: absolute;
+        float: left;
+        width: 100%;
+        background-color: #005826;
+        color: white;
+        border-radius: 5px;
+        padding: 2%;
+        z-index: 1;
+    }
+
+    .navigation-menu-burger img {
+        height: 30px;
+        align-self: flex-end;
+        margin: 5% 2%;
+    }
+
+    .navigation-menu-burger li {
+        font-size: 90%;
+        font-weight: 900;
+        margin: 0% 0% 3% 5%;
     }
 
     /*---footer---*/
@@ -438,6 +444,16 @@ footer {
 
     section {
         padding: 20% 5% 15%;
+    }
+
+    /*---navigation in burger---*/
+    .navigation-menu-burger img {
+        margin: 2% 1%;
+    }
+
+    .navigation-menu-burger li {
+        font-size: 100%;
+        margin: 0% 0% 3% 3%;
     }
     
     /*---footer---*/
