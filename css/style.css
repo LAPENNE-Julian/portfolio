@@ -169,6 +169,9 @@ footer {
 }
 
 .skills-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 5%;
 }
 
@@ -245,15 +248,15 @@ footer {
 /*---------------------------------------------------------
  MEDIA QUERIES
 ---------------------------------------------------------*/
-
-/*----------multi----------*/
-/*Mobile-S, Mobile-M, Mobile -L*/
-@media (max-width: 425px){
+/*Mobile-S, Mobile-M, Mobile -L (425), tablet max 529*/
+/*AND between laptop 1024 and laptop-L max 1074*/
+@media (max-width: 529px),
+(min-width: 1025px) and (max-width: 1074px) {
 
     /*---main---*/
     .main-content-btn {
-        margin-top: 15%;
-        padding: 0% 10%;
+        margin-top: 10%;
+        padding: 0% 20%;
         display: flex;
         flex-direction: column;
     }
@@ -262,7 +265,7 @@ footer {
         font-size: 90%;
         margin-bottom: 10%;
         border-radius: 5px;
-        padding: 8%;
+        padding: 5%;
         text-align: center;
     }
 }
@@ -382,12 +385,6 @@ footer {
     .skills-content img {
         height: 30px;
     }
-
-    .skills-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
     
     /*---introduction---*/
     #introduction {
@@ -414,22 +411,6 @@ footer {
     }
 }
 
-/*Mobile-S, Mobile-M, Mobile -L, Tablet max 650*/
-@media (max-width: 650px){
-    
-}
-
-/*Mobile-S, Mobile-M, Mobile -L, Tablet max 810*/
-@media (max-width: 810px){
-    
-}
-
-/*Tablet min 650, lapTop 1024*/
-@media (min-width: 651px) and (max-width: 1024px){
-
-    
-}
-
 /*Tablet, LapTop 1024*/
 @media (min-width: 426px) and (max-width: 1024px){
 
@@ -449,7 +430,7 @@ footer {
 
     /*---introduction---*/
     #introduction {
-        padding: 25% 5% 15%;
+        padding: 20% 5% 15%;
     }
 
     /*---production---*/
@@ -459,24 +440,15 @@ footer {
 
     /*---contact---*/
     #contact {
+        height: 100vh;
         padding: 20% 10% 10%;
     }
-}
 
-/*----------standard----------*/
-/*Mobile-S and Mobile-M*/
-@media (max-width: 375px){ 
-    
-}
-
-/*Mobile L*/
-@media (min-width: 376px) and (max-width: 425px){
-    
-}
-
-/* tablet*/
-@media (min-width: 426px) and (max-width: 768px){
-    
+    .contact-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /*lapTop 1024*/
@@ -500,10 +472,55 @@ footer {
     #skills {
         padding: 5% 20% 5%;
     }
+}
 
+/*between laptop 1024 and laptop-L max 1074*/
+@media (min-width: 1025px) and (max-width: 1074px) {
+
+    /*---navigation---*/
+    .navigation-header {
+        font-size: 150%;
+    }
+
+    .navigation-menu {
+        font-size: 100%;
+    }
+
+    /*---contact---*/
     .contact-content {
+        flex-wrap: nowrap;
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+}
+
+/*lapTop-L 1440*/
+@media (min-width: 1025px) and (max-width: 1440px){
+
+    section {
+        padding: 25% 5% 15%;
+    }
+
+    #introduction,
+    #productions,
+    #contact {
+        padding: 15% 10% 10%;
+    }
+
+    /*---main---*/
+    .main-model img {
+        height: 350px;
+    }
+
+    /*---skills---*/
+    .skills-content {
+        width: 30%;
+        margin-left: 10%;
+    }
+
+    /*---footer---*/
+    footer {
+        padding: 0.5% 5%;
     }
 }
