@@ -26,7 +26,7 @@ section {
 
 h1 {
     font-size: 180%;
-    margin-bottom: 10%;
+    margin: 30% 0% 10%;
 }
 
 h2 {
@@ -115,7 +115,7 @@ footer {
 }
 
 .main-content {
-    margin-right: 10%;
+    margin-right: 5%;
     padding: 5% 0%;
 }
 
@@ -140,10 +140,8 @@ footer {
 }
 
 .main-model img {
-    height: 500px;
+    height: 700px;
     margin-left: 5%;
-    border-radius: 50%;
-    border: medium solid black;
 }
 
 
@@ -174,6 +172,10 @@ footer {
     flex-direction: row;
     align-items: center;
     margin-bottom: 5%;
+}
+
+.skills-row-end {
+    margin-bottom: 0%;
 }
 
 .skills-row p {
@@ -276,7 +278,7 @@ footer {
 
     section {
         height: auto;
-        padding: 25% 5% 15%;
+        padding: 15% 5% 15%;
     }
 
     h1 {
@@ -387,7 +389,7 @@ footer {
     }
 
     .main-model img {
-        height: 200px;
+        height: 300px;
         margin: 0% 0% 10% 0%;
     }
 
@@ -443,7 +445,11 @@ footer {
 @media (min-width: 426px) and (max-width: 1024px){
 
     section {
-        padding: 20% 5% 15%;
+        padding: 5% 5% 15%;
+    }
+
+    h1 {
+        margin-bottom: 6%;
     }
 
     /*---navigation in burger---*/
@@ -462,8 +468,8 @@ footer {
     }
 
     .main-model img {
-        height: 250px;
-        margin: 0% 0% 20% 0%;
+        height: 400px;
+        margin: 0% 0% 10% 0%;
     }
 
     /*---introduction---*/
@@ -498,12 +504,12 @@ footer {
     }
 
     .main-model img {
-        height: 300px;
+        height: 500px;
     }
 
     /*---main---*/
     #main {
-        padding: 15% 5% 15%;
+        padding: 5% 5% 15%;
     }
 
     /*---skills---*/
@@ -537,7 +543,11 @@ footer {
 @media (min-width: 1025px) and (max-width: 1440px){
 
     section {
-        padding: 25% 5% 15%;
+        padding: 20% 5% 15%;
+    }
+
+    h1 {
+        margin: 25% 0% 5%;
     }
 
     #introduction,
@@ -548,7 +558,7 @@ footer {
 
     /*---main---*/
     .main-model img {
-        height: 350px;
+        height: 450px;
     }
 
     /*---skills---*/
