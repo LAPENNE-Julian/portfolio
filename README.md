@@ -1,7 +1,5 @@
 # LAPENNE Julian - portfolio
 
-<kbd>![](images/lapenne-julian-avatar.png)</kbd>
-
 Welcome to my portfolio.
 
 >  **Contents :** 
