@@ -586,3 +586,20 @@ footer {
         padding: 0.5% 5%;
     }
 }
+
+/*Mobile-S, Mobile-M, Mobile -L (425), tablet, laptop*/
+/*and laptop-L max 1439*/
+@media (max-height: 600px) and (max-width: 1439px) {
+
+    section {
+        height: unset;
+    }
+
+    #main,
+    #skills,
+    #introduction,
+    #production,
+    #contact {
+        height: unset;
+    }
+}
