@@ -253,8 +253,10 @@ footer {
 ---------------------------------------------------------*/
 /*Mobile-S, Mobile-M, Mobile -L (425), tablet max 529*/
 /*AND between laptop 1024 and laptop-L max 1074*/
+/*AND between laptop 1075 and laptop-L max 11149*/
 @media (max-width: 529px),
-(min-width: 1025px) and (max-width: 1074px) {
+(min-width: 1025px) and (max-width: 1074px),
+(min-width: 1075px) and (max-width: 1149px) {
 
     /*---main---*/
     .main-content-btn {
@@ -539,6 +541,15 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+}
+
+/*between laptop 1024 and laptop-L max 11149*/
+@media (min-width: 1075px) and (max-width: 1149px) {
+    /*---main---*/
+    .main-content-btn {
+        display: flex;
+        flex-direction: column;
     }
 }
 
