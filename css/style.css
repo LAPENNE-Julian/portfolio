@@ -431,6 +431,7 @@ footer {
 
     /*---contact---*/
     #contact {
+        height: 100vh;
         padding: 35% 10% 10%;
     }
 
