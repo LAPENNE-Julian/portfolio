@@ -5,6 +5,6 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# redirect every request to index.php
+# redirect every request to index.html
 # and give the relative URL in "_url" GET param
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(.*)$ index.html [QSA,L]
