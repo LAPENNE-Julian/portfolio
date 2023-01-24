@@ -440,7 +440,7 @@ footer {
 
     /*---production---*/
     #productions {
-        height: 100vh; 
+        height: 100vh;
         padding: 35% 10% 0%; 
     }
 
@@ -577,7 +577,7 @@ footer {
 
     #main,
     #skills,
-    #production,
+    #productions,
     #contact {
         height: 100vh;
     }
@@ -605,7 +605,7 @@ footer {
     #main,
     #skills,
     #introduction,
-    #production,
+    #productions,
     #contact {
         height: auto;
     }
