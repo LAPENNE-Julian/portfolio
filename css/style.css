@@ -140,7 +140,7 @@ footer {
 }
 
 .main-model img {
-    height: 700px;
+    height: 500px;
     margin-left: 5%;
 }
 
@@ -508,10 +508,6 @@ footer {
         padding: 2% 35%; 
     }
 
-    .main-model img {
-        height: 500px;
-    }
-
     /*---main---*/
     #main {
         padding: 5% 5% 15%;
@@ -561,7 +557,7 @@ footer {
     }
 
     h1 {
-        margin: 25% 0% 5%;
+        margin: 20% 0% 5%;
     }
 
     #introduction,
@@ -572,7 +568,7 @@ footer {
 
     /*---main---*/
     .main-model img {
-        height: 450px;
+        height: 400px;
     }
 
     /*---skills---*/
@@ -588,8 +584,7 @@ footer {
 }
 
 /*Mobile-S, Mobile-M, Mobile -L (425), tablet, laptop*/
-/*and laptop-L max 1439*/
-@media (max-height: 600px) and (max-width: 1439px) {
+@media (max-height: 650px) and (max-width: 1023px) {
 
     section {
         height: unset;
