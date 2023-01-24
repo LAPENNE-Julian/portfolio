@@ -144,7 +144,6 @@ footer {
     margin-left: 5%;
 }
 
-
 /*---skills---*/
 #skills {
     display: flex;
@@ -184,7 +183,12 @@ footer {
 
 /*---introduction--*/
 #introduction {
-    padding: 15% 20% 0%;
+    height: auto;
+    padding: 12% 20% 0%;
+}
+
+#introduction p {
+    margin-bottom: 4%;
 }
 
 /*---production---*/
@@ -275,10 +279,24 @@ footer {
     }
 }
 
+/*Mobile-S, Mobile-M, Mobile -L*/
+@media (max-width: 425px){
+    /*introduction*/
+    #introduction {
+        padding: 35% 5% 15%;
+    }
+    
+    #introduction p {
+        margin-bottom: 10%;
+    }
+}
+
 /*Mobile-S, Mobile-M, Mobile -L, Tablet, laptop 1024*/
 @media (max-width: 1024px){
 
-    section {
+    #main,
+    #skills,
+    #introduction {
         height: auto;
         padding: 15% 5% 15%;
     }
@@ -419,12 +437,6 @@ footer {
     .skills-content img {
         height: 30px;
     }
-    
-    /*---introduction---*/
-    #introduction {
-        height: 100vh;
-        padding: 45% 5% 15%;
-    }
 
     /*---production---*/
     #productions {
@@ -449,7 +461,8 @@ footer {
 /*Tablet, LapTop 1024*/
 @media (min-width: 426px) and (max-width: 1024px){
 
-    section {
+    #main,
+    #skills {
         padding: 5% 5% 15%;
     }
 
@@ -472,14 +485,10 @@ footer {
         padding: 4% 30%;
     }
 
+    /*---main---*/
     .main-model img {
         height: 400px;
         margin: 0% 0% 10% 0%;
-    }
-
-    /*---introduction---*/
-    #introduction {
-        padding: 20% 5% 15%;
     }
 
     /*---production---*/
@@ -489,7 +498,6 @@ footer {
 
     /*---contact---*/
     #contact {
-        height: 100vh;
         padding: 20% 10% 10%;
     }
 
@@ -552,7 +560,8 @@ footer {
 /*lapTop-L 1440*/
 @media (min-width: 1025px) and (max-width: 1440px){
 
-    section {
+    #main,
+    #skills {
         padding: 20% 5% 15%;
     }
 
@@ -564,6 +573,13 @@ footer {
     #productions,
     #contact {
         padding: 15% 10% 10%;
+    }
+
+    #main,
+    #skills,
+    #production,
+    #contact {
+        height: 100vh;
     }
 
     /*---main---*/
@@ -584,17 +600,13 @@ footer {
 }
 
 /*Mobile-S, Mobile-M, Mobile -L (425), tablet, laptop*/
-@media (max-height: 650px) and (max-width: 1023px) {
-
-    section {
-        height: unset;
-    }
+@media (max-height: 650px) and (max-width: 1024px) {
 
     #main,
     #skills,
     #introduction,
     #production,
     #contact {
-        height: unset;
+        height: auto;
     }
 }
