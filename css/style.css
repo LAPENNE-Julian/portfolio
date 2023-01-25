@@ -200,20 +200,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
+    /* display: grid;
+    grid-template-columns: 33% 33% 33%; */
 }
 
 .production-card {
-    border: thin solid gray;
-    border-radius: 10% 0% 10% 0%;
+    background-image: url(../images/pink.jpg);
+    height: 160px;
+    width: 350px;
+    border: thin solid #b69dc4d3;
+    border-radius: 25px;
     padding: 5%;
     margin: 5%;
     box-shadow: 10px 5px 5px rgb(145, 145, 145);
 }
 
-.production-card h3 {
-    color: #b69dc4d3;
-    margin-bottom: 15%;
+.production-card-header {
+    
 }
 
 .production-card a {
@@ -222,12 +225,21 @@ footer {
     font-family: 'Rock Salt', cursive;
 }
 
+.production-card h3 {
+    color: #b69dc4d3;
+    margin-bottom: 0%;
+}
+
 .production-card p {
     font-size: 90%;
 }
 
 .production-card p:first-of-type {
-    margin-top: 10%;
+    margin: 5% 0% 0%;
+}
+
+.production-card p:last-of-type {
+    margin: 5% 0% 5%;
 }
 
 /*---contact---*/
