@@ -5,7 +5,6 @@ const app = {
       console.log("app.init() appelé");
 
       app.bindNavigationBurger();
-
       app.bindInteractiveProductcard();
     },
   
@@ -39,12 +38,8 @@ const app = {
         const allProductCard = document.querySelectorAll(".production-card");
 
         for (productCard of allProductCard){
-            //Select a element of production card
-            const productCardLink = productCard.querySelector("a");
-            //Get href attribute value of a element
-            const productCardhref = productCardLink.getAttribute("href");
             //Add event on click
-            productCard.addEventListener("click", app.handleInteractiveLink(productCardhref));
+            productCard.addEventListener("click", app.handleInteractiveLink);
         }
     },
 
@@ -72,9 +67,15 @@ const app = {
         app.undisplayNavigationBurger()
     },
 
-    handleInteractiveLink: function(link) {
-        //Open new page with link argument
-        app.openNewPage(link);
+    handleInteractiveLink: function() {
+
+        //Select a element of production card
+        const productCardLink = productCard.querySelector("a");
+        //Get href attribute value of a element
+        const productCardhref = productCardLink.getAttribute("href");
+        
+        //Open new page with url
+        app.openNewPage(productCardhref);
     },
 
     // ---------------------------------------------------------
