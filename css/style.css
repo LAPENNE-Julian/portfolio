@@ -114,10 +114,6 @@ footer {
     align-items: center;
 }
 
-#main h1 {
-    font-variant: small-caps;
-}
-
 .main-content {
     margin-right: 5%;
     padding: 5% 0%;
@@ -285,13 +281,7 @@ footer {
 
 /*Mobile-S, Mobile-M, Mobile -L*/
 @media (max-width: 425px){
-
-    /*---main---*/
-    #main h1 {
-        text-align: center;
-    }
-
-    /*---introduction---*/
+    /*introduction*/
     #introduction {
         padding: 35% 5% 15%;
     }
