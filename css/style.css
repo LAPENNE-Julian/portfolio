@@ -230,13 +230,17 @@ footer {
     font-size: 90%;
 }
 
-.production-card p:first-of-type {
+.production-card p {
+    margin: 5% 0% 0%;
+}
+
+/* .production-card p:first-of-type {
     margin: 5% 0% 0%;
 }
 
 .production-card p:last-of-type {
     margin: 5% 0% 5%;
-}
+} */
 
 /*---contact---*/
 #contact {
@@ -289,6 +293,7 @@ footer {
 
 /*Mobile-S, Mobile-M, Mobile -L*/
 @media (max-width: 425px){
+    
     /*introduction*/
     #introduction {
         padding: 35% 5% 15%;
@@ -296,6 +301,16 @@ footer {
     
     #introduction p {
         margin-bottom: 10%;
+    }
+
+    /*---production---*/
+    .production-card {
+        background-size: 300%;
+        height: 140px;
+    }
+
+    .production-card a {
+        font-size: 100%;
     }
 }
 
