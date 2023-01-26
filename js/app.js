@@ -38,8 +38,17 @@ const app = {
         const allProductCard = document.querySelectorAll(".production-card");
 
         for (productCard of allProductCard){
+
+            //Select a element of production card
+            const productCardLink = productCard.querySelector("a");
+            //Get href attribute value of a element
+            const productCardhref = productCardLink.getAttribute("href");
             //Add event on click
-            productCard.addEventListener("click", app.handleInteractiveLink);
+            productCard.addEventListener("click", () => {
+
+                //Open neww page with url of productCard
+                app.openNewPage(productCardhref);
+            });
         }
     },
 
@@ -65,17 +74,6 @@ const app = {
     handleUndisplayBurger: function() {
         //Cancel display navigation burger element
         app.undisplayNavigationBurger()
-    },
-
-    handleInteractiveLink: function() {
-
-        //Select a element of production card
-        const productCardLink = productCard.querySelector("a");
-        //Get href attribute value of a element
-        const productCardhref = productCardLink.getAttribute("href");
-        
-        //Open new page with url
-        app.openNewPage(productCardhref);
     },
 
     // ---------------------------------------------------------
