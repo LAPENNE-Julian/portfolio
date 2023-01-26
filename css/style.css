@@ -27,6 +27,7 @@ section {
 h1 {
     font-size: 180%;
     margin: 30% 0% 10%;
+    font-variant: small-caps;
 }
 
 h2 {
@@ -293,8 +294,13 @@ footer {
 
 /*Mobile-S, Mobile-M, Mobile -L*/
 @media (max-width: 425px){
-    
-    /*introduction*/
+
+    /*---main---*/
+    #main h1 {
+        text-align: center;
+    }
+
+    /*---introduction---*/
     #introduction {
         padding: 35% 5% 15%;
     }
