@@ -8,3 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 # redirect every request to index.html
 # and give the relative URL in "_url" GET param
 RewriteRule ^(.*)$ index.html [QSA,L]
+
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://lapenne-julian.dev [R=301,L]
